@@ -1,0 +1,42 @@
+name: Java Build & Test
+
+on:
+  push:
+    branches:
+      - main
+      - 'lab_*'
+  pull_request:
+    branches:
+      - main
+      - 'lab_*'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Make Gradle Wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build project
+        run: ./gradlew build -x test
+        # -x test wyłącza testy w tym kroku, żeby tylko sprawdzić kompilację
+
+      - name: Run unit tests
+        run: ./gradlew test
+        # Ten krok uruchomi wszystkie testy jednostkowe
+
+      - name: Run World and check output
+        run: |
+          ./gradlew run --args="f b r l" > output.log
+          grep -q "System wystartował" output.log
+          grep -q "System zakończył działanie" output.log
