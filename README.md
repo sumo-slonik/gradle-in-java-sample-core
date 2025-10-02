@@ -116,7 +116,8 @@ cd MyGradleApp
 gradle init
 ```
 - Wybierz typ projektu: **application**  
-- Wybierz język: **Java**  
+- Wybierz język: **Java**
+- Application structure: **Single application project**
 - Pozostałe opcje możesz zostawić domyślnie.
 
 ### Krok 2: Struktura projektu
