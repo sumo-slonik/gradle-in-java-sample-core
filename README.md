@@ -18,7 +18,7 @@ Gradle używa **skryptów konfiguracyjnych** (`build.gradle`) napisanych w Groov
 Podstawowe elementy:
 - **Plugins** – np. `java` dla projektów w Javie.
 - **Dependencies** – deklaracja bibliotek, z których korzysta projekt.
-- **Tasks** – jednostki pracy, np. `build`, `test`, `run`.
+- **Tasks** – np. `build`, `test`, `run`.
 
 Przykładowy plik `build.gradle`:
 
