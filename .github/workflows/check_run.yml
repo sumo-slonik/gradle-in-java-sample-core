@@ -35,8 +35,10 @@ jobs:
         run: ./gradlew test
         # Ten krok uruchomi wszystkie testy jednostkowe
 
-      - name: Run World and check output
-        run: |
-          ./gradlew run --args="f b r l" > output.log
-          grep -q "System wystartował" output.log
-          grep -q "System zakończył działanie" output.log
+
+# odkomentuj poniższe linijki jeśli wklejasz do do laboratorium z PO
+#      - name: Run World and check output
+#        run: |
+#          ./gradlew run --args="f b r l" > output.log
+#          grep -q "System wystartował" output.log
+#          grep -q "System zakończył działanie" output.log
