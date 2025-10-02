@@ -159,4 +159,8 @@ gradle test
 Właśnie stworzyłeś prosty projekt Java z Gradle, zbudowałeś go, uruchomiłeś i przetestowałeś.  
 Możesz teraz eksperymentować, dodając własne klasy i testy.
 
+Jeśli chciałbyś, aby GitHub sam sprawdzał, czy Twój projekt buduje się poprawnie, a testy przechodzą, możesz do tego wykorzystać plik, który znajduje się w tym repozytorium w folderze `.github/workflows/check_run.yml`.  
+
+Jeśli zainteresował Cię temat GitHub Actions, zapraszam do tego [repozytorium](https://github.com/sumo-slonik/git-hub-actiosns-sample-core)
+
 
