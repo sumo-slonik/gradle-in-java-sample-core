@@ -127,7 +127,7 @@ Po inicjalizacji Gradle utworzy strukturę projektu:
 MyGradleApp/
  ├─ build.gradle
  ├─ settings.gradle
- ├─ src/
+ ├─ app/src/
  │   ├─ main/java/App.java
  │   └─ test/java/AppTest.java
  └─ gradle/
