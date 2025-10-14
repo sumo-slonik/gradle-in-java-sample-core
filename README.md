@@ -15,6 +15,8 @@ Jest szczególnie popularny w ekosystemie Javy i Androida.
 ## Jak działa Gradle?
 Gradle używa **skryptów konfiguracyjnych** (`build.gradle`) napisanych w Groovy lub Kotlin DSL.  
 
+>**Uwaga:** Wszystkie przykłady w tym README są pokazane w Gradle.
+
 Podstawowe elementy:
 - **Plugins** – np. `java` dla projektów w Javie.
 - **Dependencies** – deklaracja bibliotek, z których korzysta projekt.
@@ -71,6 +73,10 @@ test {
 
 
 ## Instalacja Gradle
+> Instrukcja zakłada, że Gradle jest zainstalowany globalnie.  
+> **Uwaga:** Nie zawsze trzeba instalować Gradle — jeśli projekt zawiera **Gradle Wrapper** (`gradlew` / `gradlew.bat`), można używać go bez instalacji Gradle. Gradle Wrapper automatycznie pobiera i uruchamia odpowiednią wersję Gradle wymaganą przez projekt.
+
+
 # Instrukcja instalacji Java i Gradle
 
 ### 1. Sprawdź, czy masz Java zainstalowaną
